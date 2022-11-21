@@ -18,6 +18,10 @@ app.get('/drinks', (req, res) => {
 	res.render('drinks_index.ejs', { drinks });
 });
 
+app.get('/drinks/:id', (req, res) => {
+	res.render('drinks_show.ejs', { drinkId: req.params.id });
+});
+
 app.listen(port, () => {
 	console.log(`listening to port ${port}`);
 });

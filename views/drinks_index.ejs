@@ -11,9 +11,9 @@
 	<body>
 		<h1>Welcome to the Git-Pub Drinks Index</h1>
 		<ul>
-			<% for(let drink of drinks){ %>
+			<% for(let i=0;i < drinks.length;i++){ %>
 			<li>
-				<a href="/drinks/<%=drink.name%>"><%=drink.name%></a>
+				<a href="/drinks/<%=i %>"><%=drinks[i].name%></a>
 			</li>
 			<% } %>
 		</ul>
